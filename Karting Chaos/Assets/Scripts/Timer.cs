@@ -13,6 +13,9 @@ public class Timer : MonoBehaviour
     public GameObject lapText;
     public GameObject prevLapText;
     public GameObject bestLap;
+    public GameObject LapCounter;
+
+    public int lapsDone;
 
     List<float> bestTimes = new List<float>();
 
@@ -37,11 +40,14 @@ public class Timer : MonoBehaviour
         if(GameObject.FindWithTag("Player"))
         {
 
+            lapsDone += 1;
+
             hasStartedLap = true;
             startTime = Time.time;
 
             prevLapText.GetComponent<Text>().text = "Last lap: " + elapsedTime.ToString();
 
+            LapCounter.GetComponent<Text>().text = "Lap: " + lapsDone;
         }
 
         prevLapText.GetComponent<Text>().text = "Last Lap: " + elapsedTime.ToString();
