@@ -2082,7 +2082,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: d5b58b781a85be9448c2b47b182669cf, type: 3}
     m_FontSize: 50
     m_FontStyle: 0
     m_BestFit: 0
@@ -5661,7 +5661,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: d5b58b781a85be9448c2b47b182669cf, type: 3}
     m_FontSize: 50
     m_FontStyle: 0
     m_BestFit: 0
@@ -7376,7 +7376,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: d5b58b781a85be9448c2b47b182669cf, type: 3}
     m_FontSize: 50
     m_FontStyle: 0
     m_BestFit: 0
@@ -10291,7 +10291,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: d5b58b781a85be9448c2b47b182669cf, type: 3}
     m_FontSize: 50
     m_FontStyle: 0
     m_BestFit: 0
@@ -12728,6 +12728,7 @@ MonoBehaviour:
   bestLap: {fileID: 1448100671}
   LapCounter: {fileID: 1073032646}
   lapsDone: 0
+  loadScene: 0
 --- !u!65 &1737301827
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13107,6 +13108,7 @@ MonoBehaviour:
   bestLap: {fileID: 0}
   LapCounter: {fileID: 0}
   lapsDone: 0
+  loadScene: 0
 --- !u!54 &1809125970
 Rigidbody:
   m_ObjectHideFlags: 0

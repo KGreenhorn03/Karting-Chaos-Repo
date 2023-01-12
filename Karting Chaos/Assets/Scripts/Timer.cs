@@ -2,9 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Timer : MonoBehaviour
 {
+
+    // Declare variables.
 
     private float startTime;
     private float elapsedTime;
@@ -17,9 +20,18 @@ public class Timer : MonoBehaviour
 
     public int lapsDone;
 
+    public int loadScene;
+
     List<float> bestTimes = new List<float>();
 
-    // Update is called once per frame
+    private void Start()
+    {
+
+        loadScene = SceneManager.GetActiveScene().buildIndex + 1;
+
+    }
+
+    // Update is called once per frame.
     void Update()
     {
         
@@ -48,6 +60,7 @@ public class Timer : MonoBehaviour
             prevLapText.GetComponent<Text>().text = "Last lap: " + elapsedTime.ToString();
 
             LapCounter.GetComponent<Text>().text = "Lap: " + lapsDone;
+
         }
 
         prevLapText.GetComponent<Text>().text = "Last Lap: " + elapsedTime.ToString();
@@ -64,6 +77,13 @@ public class Timer : MonoBehaviour
 
             bestTimes.Sort();
             bestLap.GetComponent<Text>().text = "Best Lap: " + bestTimes[0].ToString();
+
+        }
+
+        if(lapsDone == 5)
+        {
+
+            SceneManager.LoadScene(loadScene);
 
         }
 
