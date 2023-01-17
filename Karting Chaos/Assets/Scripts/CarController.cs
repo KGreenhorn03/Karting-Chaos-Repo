@@ -5,6 +5,8 @@ using UnityEngine;
 public class CarController : MonoBehaviour
 {
 
+    // Declare Variables
+
     public float MoveSpeed = 50;
     public float MaxSpeed = 15;
     public float Drag = 0.98f;

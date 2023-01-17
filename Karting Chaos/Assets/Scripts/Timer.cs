@@ -34,7 +34,9 @@ public class Timer : MonoBehaviour
     // Update is called once per frame.
     void Update()
     {
-        
+
+        // When the player crosses the Start/Finish Line, the lap will be timed.
+
         if(hasStartedLap)
         {
 
@@ -51,6 +53,8 @@ public class Timer : MonoBehaviour
 
         if(GameObject.FindWithTag("Player"))
         {
+
+            // When the player completes a lap, the lap total will increase.
 
             lapsDone += 1;
 
@@ -79,6 +83,8 @@ public class Timer : MonoBehaviour
             bestLap.GetComponent<Text>().text = "Best Lap: " + bestTimes[0].ToString();
 
         }
+
+        // If the player completes 5 laps they continue to the next level.
 
         if(lapsDone == 5)
         {
