@@ -1630,7 +1630,7 @@ MonoBehaviour:
   MoveSpeed: 60
   MaxSpeed: 400
   Drag: 0.98
-  SteerAngle: 7.5
+  SteerAngle: 4
   Traction: 10
 --- !u!4 &1595606466
 Transform:
