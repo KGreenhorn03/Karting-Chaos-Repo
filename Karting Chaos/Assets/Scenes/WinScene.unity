@@ -1627,11 +1627,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 54b2ff7c0544f814a81d03f7fe2440fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MoveSpeed: 60
-  MaxSpeed: 400
+  MoveSpeed: 120
+  MaxSpeed: 750
   Drag: 0.98
-  SteerAngle: 4
-  Traction: 10
+  SteerAngle: 7.5
+  Traction: 0.1
 --- !u!4 &1595606466
 Transform:
   m_ObjectHideFlags: 0
